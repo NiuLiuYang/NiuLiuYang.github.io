@@ -93,12 +93,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="NiuLiuYang">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="前言作为一个跑偏了的android程序猿,今天有幸能为移动端提供插件，心里很高兴。 创建插件创建插件目录123456789101112$ iromp$ 	|$ 	|-------src$ 	|		 |-----------android$ 	|		 |-----------ios$ 	|-------www$ 	|		 |-----------iromp.js$ 	|$ 	|-------plug">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cordova插件">
+<meta property="og:url" content="http://yoursite.com/2017/07/11/Cordova插件/index.html">
 <meta property="og:site_name" content="NiuLiuYang">
+<meta property="og:description" content="前言作为一个跑偏了的android程序猿,今天有幸能为移动端提供插件，心里很高兴。 创建插件创建插件目录123456789101112$ iromp$ 	|$ 	|-------src$ 	|		 |-----------android$ 	|		 |-----------ios$ 	|-------www$ 	|		 |-----------iromp.js$ 	|$ 	|-------plug">
+<meta property="og:updated_time" content="2017-07-17T11:47:05.038Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NiuLiuYang">
+<meta name="twitter:title" content="Cordova插件">
+<meta name="twitter:description" content="前言作为一个跑偏了的android程序猿,今天有幸能为移动端提供插件，心里很高兴。 创建插件创建插件目录123456789101112$ iromp$ 	|$ 	|-------src$ 	|		 |-----------android$ 	|		 |-----------ios$ 	|-------www$ 	|		 |-----------iromp.js$ 	|$ 	|-------plug">
 
 
 
@@ -126,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/11/Cordova插件/"/>
 
 
 
 
 
-  <title>NiuLiuYang</title>
+  <title>Cordova插件 | NiuLiuYang</title>
   
 
 
@@ -157,9 +161,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -242,9 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -270,9 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/11/Cordova插件/" itemprop="url">Cordova插件</a></h1>
+          <h1 class="post-title" itemprop="name headline">Cordova插件</h1>
         
 
         <div class="post-meta">
@@ -319,9 +319,7 @@
       
 
       
-        
-          
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><pre><code>作为一个跑偏了的android程序猿,今天有幸能为移动端提供插件，心里很高兴。
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><pre><code>作为一个跑偏了的android程序猿,今天有幸能为移动端提供插件，心里很高兴。
 </code></pre><h2 id="创建插件"><a href="#创建插件" class="headerlink" title="创建插件"></a>创建插件</h2><h3 id="创建插件目录"><a href="#创建插件目录" class="headerlink" title="创建插件目录"></a>创建插件目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$ iromp</div><div class="line">$ 	|</div><div class="line">$ 	|-------src</div><div class="line">$ 	|		 |-----------android</div><div class="line">$ 	|		 |-----------ios</div><div class="line">$ 	|-------www</div><div class="line">$ 	|		 |-----------iromp.js</div><div class="line">$ 	|</div><div class="line">$ 	|-------plugin.xml</div><div class="line">$ 	|</div><div class="line">$ 	|-------README.md</div><div class="line">$</div></pre></td></tr></table></figure>
 <h3 id="编写plugin-xml文件"><a href="#编写plugin-xml文件" class="headerlink" title="编写plugin.xml文件"></a>编写plugin.xml文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">$ 	plugin :		定义命名空间，ID和插件版本</div><div class="line">$ 	name :			定义插件的名字</div><div class="line">$ 	description :		定义插件描述</div><div class="line">$ 	js-module :		定义js文件名，自动添加到Cordova项目的起始页。在*js-module*中列出插件。clobbers配置module.exports自动添加到window对象，让插件方法能够在窗口级别使用。</div><div class="line">$ 	platform :		定义移动端的配置信息	</div><div class="line">$ 	</div><div class="line">$ 	plugin.xml样例：</div><div class="line">$ 	</div><div class="line">$ 	&lt;?xml version=<span class="string">'1.0'</span> encoding=<span class="string">'utf-8'</span>?&gt;</div><div class="line">$ 	&lt;plugin xmlns=<span class="string">"http://apache.org/cordova/ns/plugins/1.0"</span></div><div class="line">$ 	        xmlns:rim=<span class="string">"http://www.blackberry.com/ns/widgets"</span></div><div class="line">$ 	        xmlns:android=<span class="string">"http://schemas.android.com/apk/res/android"</span></div><div class="line">$ 	        id=<span class="string">"com.ronhe.iromp"</span></div><div class="line">$ 	        version=<span class="string">"0.0.1"</span>&gt;</div><div class="line">$ 	</div><div class="line">$ 	    &lt;name&gt;iromp&lt;/name&gt;</div><div class="line">$ 	    &lt;description&gt;This is the plugin <span class="keyword">for</span> RONHE IROMP&lt;/description&gt;</div><div class="line">$ 	    &lt;js-module name=<span class="string">"IrompPlugin"</span> src=<span class="string">"www/iromp.js"</span>&gt;</div><div class="line">$ 	        &lt;clobbers target=<span class="string">"IrompPlugin"</span> /&gt;</div><div class="line">$ 	    &lt;/js-module&gt;</div><div class="line">$ 	</div><div class="line">$ 	    &lt;platform name=<span class="string">"android"</span>&gt;</div><div class="line">$ 	        &lt;config-file parent=<span class="string">"/*"</span> target=<span class="string">"res/xml/config.xml"</span>&gt;</div><div class="line">$ 	            &lt;feature name=<span class="string">"IrompPlugin"</span>&gt;</div><div class="line">$ 	                &lt;param name=<span class="string">"android-package"</span> value=<span class="string">"com.ronhe.iromp.IrompPlugin"</span> /&gt;</div><div class="line">$ 	            &lt;/feature&gt;</div><div class="line">$ 	        &lt;/config-file&gt;</div><div class="line">$ 	</div><div class="line">$ 	        &lt;config-file target=<span class="string">"AndroidManifest.xml"</span> parent=<span class="string">"/manifest"</span>&gt;</div><div class="line">$ 	            &lt;!-- put uses-permission here --&gt;</div><div class="line">$ 	        &lt;/config-file&gt;</div><div class="line">$ 	</div><div class="line">$ 	        &lt;config-file parent=<span class="string">"/manifest/application"</span> target=<span class="string">"AndroidManifest.xml"</span>&gt;</div><div class="line">$ 	            &lt;service</div><div class="line">$ 	                    android:name=<span class="string">"com.ronhe.iromp.IrompService"</span></div><div class="line">$ 	                    android:enabled=<span class="string">"true"</span></div><div class="line">$ 	                    &gt;</div><div class="line">$ 	                &lt;intent-filter android:priority=<span class="string">"1000"</span> &gt;</div><div class="line">$ 	                    &lt;action android:name=<span class="string">"com.ronhe.iromp.IrompService"</span>/&gt;</div><div class="line">$ 	                &lt;/intent-filter&gt;</div><div class="line">$ 	            &lt;/service&gt;</div><div class="line">$ 	        &lt;/config-file&gt;</div><div class="line">$ 	        &lt;<span class="built_in">source</span>-file src=<span class="string">"src/android/IrompPlugin.java"</span> target-dir=<span class="string">"src/com/ronhe/iromp"</span> /&gt;</div><div class="line">$ 			&lt;<span class="built_in">source</span>-file src=<span class="string">"src/android/IrompService.java"</span> target-dir=<span class="string">"src/com/ronhe/iromp"</span> /&gt;</div><div class="line">$ 			&lt;<span class="built_in">source</span>-file src=<span class="string">"src/android/SharedPrefsUtil.java"</span> target-dir=<span class="string">"src/com/ronhe/iromp"</span> /&gt;</div><div class="line">$ 			&lt;<span class="built_in">source</span>-file src=<span class="string">"src/android/client.jar"</span> target-dir=<span class="string">"libs"</span>/&gt;</div><div class="line">$ 			&lt;<span class="built_in">source</span>-file src=<span class="string">"src/android/log4j-1.2.17.jar"</span> target-dir=<span class="string">"libs"</span>/&gt;</div><div class="line">$ 			&lt;<span class="built_in">source</span>-file src=<span class="string">"src/android/netty-all-4.1.12.Final.jar"</span> target-dir=<span class="string">"libs"</span>/&gt;</div><div class="line">$ 			&lt;<span class="built_in">source</span>-file src=<span class="string">"src/android/protobuf-java-3.3.1.jar"</span> target-dir=<span class="string">"libs"</span>/&gt;</div><div class="line">$ 			&lt;<span class="built_in">source</span>-file src=<span class="string">"src/android/slf4j-api-1.6.4.jar"</span> target-dir=<span class="string">"libs"</span>/&gt;</div><div class="line">$ 	    &lt;/platform&gt;</div><div class="line">$ 	&lt;/plugin&gt;</div></pre></td></tr></table></figure>
 <h3 id="创建调用java的js文件"><a href="#创建调用java的js文件" class="headerlink" title="创建调用java的js文件"></a>创建调用java的js文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ 	</div><div class="line">$ 	require 用于引入java的类，exports 用于导出java类的方法</div><div class="line">$ 	<span class="built_in">exec</span>五个参数：1：成功回调的函数。2：失败回调的函数。3：类名。4：可以用来区分调用那一段逻辑。5：js传递参数给java，传递格式：json</div><div class="line">$ 	</div><div class="line">$ 	js样例：</div><div class="line">$ 	</div><div class="line">$ 	var <span class="built_in">exec</span> = require(<span class="string">'cordova/exec'</span>);</div><div class="line">$ 	module.exports.startServiceOnSuccess=<span class="keyword">function</span>(success, error, msg) &#123;</div><div class="line">$ 	    <span class="built_in">exec</span>(success, error, <span class="string">"IrompPlugin"</span>, <span class="string">"startServiceOnSuccess"</span>, [msg]);</div><div class="line">$ 	&#125;;</div></pre></td></tr></table></figure>
@@ -331,20 +329,27 @@
 调用安卓的服务，与socket服务通讯，里面包含socket服务端与客户端代码
 </code></pre><p>下载地址： <a href="https://github.com/NiuLiuYang/NiuLiuYang/" target="_blank" rel="external">https://github.com/NiuLiuYang/NiuLiuYang/</a></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -352,272 +357,38 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/09/HEXO/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NiuLiuYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NiuLiuYang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/09/HEXO/" itemprop="url">HEXO</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-09T18:27:52+08:00">
-                2017-07-09
-              </time>
+              <a href="/2017/07/09/HEXO/" rel="next" title="HEXO">
+                <i class="fa fa-chevron-left"></i> HEXO
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="Hexo-gitHub博客初体验"><a href="#Hexo-gitHub博客初体验" class="headerlink" title="Hexo+gitHub博客初体验"></a>Hexo+gitHub博客初体验</h2><pre><code>Node和Git都安装好后,首先创建一个文件夹,如blog,用户存放hexo的配置文件,然后进入blog里安装Hexo。
-</code></pre><h3 id="执行如下命令安装Hexo："><a href="#执行如下命令安装Hexo：" class="headerlink" title="执行如下命令安装Hexo："></a>执行如下命令安装Hexo：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install -g hexo</div></pre></td></tr></table></figure>
-<h3 id="初始化然后-执行init命令初始化hexo-命令："><a href="#初始化然后-执行init命令初始化hexo-命令：" class="headerlink" title="初始化然后,执行init命令初始化hexo,命令："></a>初始化然后,执行init命令初始化hexo,命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></table></figure>
-<pre><code>至此,全部安装工作已经完成！blog就是博客根目录,所有的操作都在里面进行。
-</code></pre><h3 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate（hexo g也可以）</div></pre></td></tr></table></figure>
-<h3 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h3><pre><code>启动本地服务,进行文章预览调试,命令：
-</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<pre><code>浏览器输入http://localhost:4000
-
-配置Github
-
-建立Repository
-</code></pre><h3 id="建立关联命令-来："><a href="#建立关联命令-来：" class="headerlink" title="建立关联命令,来："></a>建立关联命令,来：</h3><pre><code>找到blog项目下的_config.yml文件
-翻到最下面,改成我这样子的
-</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ deploy:</div><div class="line">$ </div><div class="line">$      <span class="built_in">type</span>: git</div><div class="line">$ </div><div class="line">$      repo: git@github.com:NiuLiuYang/NiuLiuYang.github.io.git</div><div class="line">$ </div><div class="line">$      branch: master</div></pre></td></tr></table></figure>
-<h3 id="执行命令："><a href="#执行命令：" class="headerlink" title="执行命令："></a>执行命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<pre><code>网上会有很多说法，有的type是github, 还有repository最后面的后缀也不一样,是github.com.git,我现在的版本是hexo: 3.1.1,执行命令hexo -vsersion就出来了,3.0后全部改成上面这种格式了。
-</code></pre><h3 id="执行配置命令："><a href="#执行配置命令：" class="headerlink" title="执行配置命令："></a>执行配置命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<h2 id="更新内容或者增加文章步骤"><a href="#更新内容或者增加文章步骤" class="headerlink" title="更新内容或者增加文章步骤"></a>更新内容或者增加文章步骤</h2><h3 id="每次更新的步骤-可按以下三步来进行。"><a href="#每次更新的步骤-可按以下三步来进行。" class="headerlink" title="每次更新的步骤,可按以下三步来进行。"></a>每次更新的步骤,可按以下三步来进行。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ </div><div class="line">$ hexo generate</div><div class="line">$ </div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<h3 id="一些常用命令："><a href="#一些常用命令：" class="headerlink" title="一些常用命令："></a>一些常用命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ hexo new<span class="string">"postName"</span> <span class="comment">#新建文章</span></div><div class="line">$ </div><div class="line">$ hexo new page<span class="string">"pageName"</span> <span class="comment">#新建页面</span></div><div class="line">$ </div><div class="line">$ hexo generate <span class="comment">#生成静态页面至public目录</span></div><div class="line">$ </div><div class="line">$ hexo server <span class="comment">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></div><div class="line">$ </div><div class="line">$ hexo deploy <span class="comment">#将.deploy目录部署到GitHub</span></div><div class="line">$ </div><div class="line">$ hexo <span class="built_in">help</span> <span class="comment"># 查看帮助</span></div><div class="line">$ </div><div class="line">$ hexo version <span class="comment">#查看Hexo的版本</span></div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/09/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NiuLiuYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NiuLiuYang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/09/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-09T16:54:22+08:00">
-                2017-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -625,6 +396,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -644,8 +419,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -689,6 +473,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建插件"><span class="nav-number">2.</span> <span class="nav-text">创建插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建插件目录"><span class="nav-number">2.1.</span> <span class="nav-text">创建插件目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写plugin-xml文件"><span class="nav-number">2.2.</span> <span class="nav-text">编写plugin.xml文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建调用java的js文件"><span class="nav-number">2.3.</span> <span class="nav-text">创建调用java的js文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建插件java调用类"><span class="nav-number">2.4.</span> <span class="nav-text">创建插件java调用类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件安装命令"><span class="nav-number">3.</span> <span class="nav-text">插件安装命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -802,10 +602,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
