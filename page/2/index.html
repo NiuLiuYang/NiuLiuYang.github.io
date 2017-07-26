@@ -301,6 +301,148 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/09/HEXO/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NiuLiuYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/NiuLiuYang/NiuLiuYang/master/pic/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NiuLiuYang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/09/HEXO/" itemprop="url">HEXO</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-09T18:27:52+08:00">
+                2017-07-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/07/09/HEXO/" class="leancloud_visitors" data-flag-title="HEXO">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+		  
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Hexo-gitHub博客初体验"><a href="#Hexo-gitHub博客初体验" class="headerlink" title="Hexo+gitHub博客初体验"></a>Hexo+gitHub博客初体验</h2><pre><code>Node和Git都安装好后,首先创建一个文件夹,如blog,用户存放hexo的配置文件,然后进入blog里安装Hexo。
+</code></pre><h3 id="执行如下命令安装Hexo："><a href="#执行如下命令安装Hexo：" class="headerlink" title="执行如下命令安装Hexo："></a>执行如下命令安装Hexo：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install -g hexo</div></pre></td></tr></table></figure>
+<h3 id="初始化然后-执行init命令初始化hexo-命令："><a href="#初始化然后-执行init命令初始化hexo-命令：" class="headerlink" title="初始化然后,执行init命令初始化hexo,命令："></a>初始化然后,执行init命令初始化hexo,命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></table></figure>
+<pre><code>至此,全部安装工作已经完成！blog就是博客根目录,所有的操作都在里面进行。
+</code></pre><h3 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate（hexo g也可以）</div></pre></td></tr></table></figure>
+<h3 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h3><pre><code>启动本地服务,进行文章预览调试,命令：
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<pre><code>浏览器输入http://localhost:4000
+
+配置Github
+
+建立Repository
+</code></pre><h3 id="建立关联命令-来："><a href="#建立关联命令-来：" class="headerlink" title="建立关联命令,来："></a>建立关联命令,来：</h3><pre><code>找到blog项目下的_config.yml文件
+翻到最下面,改成我这样子的
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ deploy:</div><div class="line">$ </div><div class="line">$      <span class="built_in">type</span>: git</div><div class="line">$ </div><div class="line">$      repo: git@github.com:NiuLiuYang/NiuLiuYang.github.io.git</div><div class="line">$ </div><div class="line">$      branch: master</div></pre></td></tr></table></figure>
+<h3 id="执行命令："><a href="#执行命令：" class="headerlink" title="执行命令："></a>执行命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<pre><code>网上会有很多说法，有的type是github, 还有repository最后面的后缀也不一样,是github.com.git,我现在的版本是hexo: 3.1.1,执行命令hexo -vsersion就出来了,3.0后全部改成上面这种格式了。
+</code></pre><h3 id="执行配置命令："><a href="#执行配置命令：" class="headerlink" title="执行配置命令："></a>执行配置命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<h2 id="更新内容或者增加文章步骤"><a href="#更新内容或者增加文章步骤" class="headerlink" title="更新内容或者增加文章步骤"></a>更新内容或者增加文章步骤</h2><h3 id="每次更新的步骤-可按以下三步来进行。"><a href="#每次更新的步骤-可按以下三步来进行。" class="headerlink" title="每次更新的步骤,可按以下三步来进行。"></a>每次更新的步骤,可按以下三步来进行。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ </div><div class="line">$ hexo generate</div><div class="line">$ </div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<h3 id="一些常用命令："><a href="#一些常用命令：" class="headerlink" title="一些常用命令："></a>一些常用命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ hexo new<span class="string">"postName"</span> <span class="comment">#新建文章</span></div><div class="line">$ </div><div class="line">$ hexo new page<span class="string">"pageName"</span> <span class="comment">#新建页面</span></div><div class="line">$ </div><div class="line">$ hexo generate <span class="comment">#生成静态页面至public目录</span></div><div class="line">$ </div><div class="line">$ hexo server <span class="comment">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></div><div class="line">$ </div><div class="line">$ hexo deploy <span class="comment">#将.deploy目录部署到GitHub</span></div><div class="line">$ </div><div class="line">$ hexo <span class="built_in">help</span> <span class="comment"># 查看帮助</span></div><div class="line">$ </div><div class="line">$ hexo version <span class="comment">#查看Hexo的版本</span></div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/09/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -472,7 +614,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
