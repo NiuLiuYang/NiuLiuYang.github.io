@@ -93,12 +93,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="NiuLiuYang">
-<meta property="og:url" content="http://yoursite.com/archives/2017/page/2/index.html">
+<meta name="description" content="orcle简记创建表空间create tablespace 表空间名字 datafile &amp;apos;表空间保存路径&amp;apos; size 1000m; 1$ create tablespace VBM_DATA01 datafile &apos;c:\db\VBM_DATA01.ora&apos; size 1000m; 给表空间添加用户create user 用户名 identified by 密码 defaul">
+<meta property="og:type" content="article">
+<meta property="og:title" content="orcle创建表空间以及用户授权">
+<meta property="og:url" content="http://yoursite.com/2017/08/11/orcle创建表空间以及用户授权/index.html">
 <meta property="og:site_name" content="NiuLiuYang">
+<meta property="og:description" content="orcle简记创建表空间create tablespace 表空间名字 datafile &amp;apos;表空间保存路径&amp;apos; size 1000m; 1$ create tablespace VBM_DATA01 datafile &apos;c:\db\VBM_DATA01.ora&apos; size 1000m; 给表空间添加用户create user 用户名 identified by 密码 defaul">
+<meta property="og:updated_time" content="2017-08-11T03:26:31.969Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NiuLiuYang">
+<meta name="twitter:title" content="orcle创建表空间以及用户授权">
+<meta name="twitter:description" content="orcle简记创建表空间create tablespace 表空间名字 datafile &amp;apos;表空间保存路径&amp;apos; size 1000m; 1$ create tablespace VBM_DATA01 datafile &apos;c:\db\VBM_DATA01.ora&apos; size 1000m; 给表空间添加用户create user 用户名 identified by 密码 defaul">
 
 
 
@@ -126,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/page/2/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/11/orcle创建表空间以及用户授权/"/>
 
 
 
 
 
-  <title>归档 | NiuLiuYang</title>
+  <title>orcle创建表空间以及用户授权 | NiuLiuYang</title>
   
 
 
@@ -157,7 +161,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -289,144 +293,161 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 7 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/11/orcle创建表空间以及用户授权/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NiuLiuYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/NiuLiuYang/NiuLiuYang/master/pic/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NiuLiuYang">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">orcle创建表空间以及用户授权</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-11T11:12:57+08:00">
+                2017-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/08/11/orcle创建表空间以及用户授权/" class="leancloud_visitors" data-flag-title="orcle创建表空间以及用户授权">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+		  
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <h2 id="orcle简记"><a href="#orcle简记" class="headerlink" title="orcle简记"></a>orcle简记</h2><h3 id="创建表空间"><a href="#创建表空间" class="headerlink" title="创建表空间"></a>创建表空间</h3><pre><code>create tablespace 表空间名字 datafile &apos;表空间保存路径&apos; size 1000m;
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ create tablespace VBM_DATA01 datafile <span class="string">'c:\db\VBM_DATA01.ora'</span> size 1000m;</div></pre></td></tr></table></figure>
+<h3 id="给表空间添加用户"><a href="#给表空间添加用户" class="headerlink" title="给表空间添加用户"></a>给表空间添加用户</h3><pre><code>create user 用户名 identified by 密码 default tablespace 表空间名字 quota 500m on users;
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ create user vbm_romp_base identified by 1 default tablespace VBM_ROMP_BASE quota 500m on users;</div></pre></td></tr></table></figure>
+<h3 id="给用户授权"><a href="#给用户授权" class="headerlink" title="给用户授权"></a>给用户授权</h3><pre><code>grant all privileges to 用户名;
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ grant all privileges to vbm_romp_base;</div></pre></td></tr></table></figure>
+<h3 id="给用户授权dba"><a href="#给用户授权dba" class="headerlink" title="给用户授权dba"></a>给用户授权dba</h3><pre><code>grant dba to 用户名;
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ grant dba to vbm_romp_base;</div></pre></td></tr></table></figure>
+<h3 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h3><pre><code>drop user 用户名 cascade;
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ drop user vbm_romp_base cascade;</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/28/IO和NIO的区别/" rel="next" title="IO和NIO的区别">
+                <i class="fa fa-chevron-left"></i> IO和NIO的区别
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
         </div>
       
-      
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/19/Redis/" itemprop="url">
-              
-                <span itemprop="name">Redis</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-19T10:05:03+08:00"
-              content="2017-07-19" >
-          07-19
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/11/Cordova插件/" itemprop="url">
-              
-                <span itemprop="name">Cordova插件</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-11T17:24:00+08:00"
-              content="2017-07-11" >
-          07-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/09/HEXO/" itemprop="url">
-              
-                <span itemprop="name">HEXO</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-09T18:27:52+08:00"
-              content="2017-07-09" >
-          07-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2017/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2017/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2017/page/3/">3</a><a class="extend next" rel="next" href="/archives/2017/page/3/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
+    </div>
+  </div>
 
 
           </div>
@@ -434,6 +455,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -453,8 +478,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://raw.githubusercontent.com/NiuLiuYang/NiuLiuYang/master/pic/avatar.jpg"
@@ -498,6 +532,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#orcle简记"><span class="nav-number">1.</span> <span class="nav-text">orcle简记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建表空间"><span class="nav-number">1.1.</span> <span class="nav-text">创建表空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给表空间添加用户"><span class="nav-number">1.2.</span> <span class="nav-text">给表空间添加用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给用户授权"><span class="nav-number">1.3.</span> <span class="nav-text">给用户授权</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给用户授权dba"><span class="nav-number">1.4.</span> <span class="nav-text">给用户授权dba</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除用户"><span class="nav-number">1.5.</span> <span class="nav-text">删除用户</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -611,11 +661,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
